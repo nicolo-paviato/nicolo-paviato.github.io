@@ -9,7 +9,7 @@ arxivurl: "https://arxiv.org/abs/XXXX.XXXXX"
 citation: "M. Hochman and N. Paviato. (2026). &quot;A threshold for Poisson behavior of non-stationary product measures.&quot; <i>Ergodic Theory Dynam. Systems</i> 46(4), 1009–1019."
 ---
 
-[**[arXiv Version]**](https://arxiv.org/abs/XXXX.XXXXX) &nbsp;|&nbsp; [**[Journal Version (DOI)]**](https://doi.org/10.1017/etds.2025.10258)
+[**[arXiv Version]**](https://arxiv.org/abs/2501.11423) &nbsp;|&nbsp; [**[Journal Version (DOI)]**](https://doi.org/10.1017/etds.2025.10258)
 
 ```bibtex
 @article{HocPav26,
