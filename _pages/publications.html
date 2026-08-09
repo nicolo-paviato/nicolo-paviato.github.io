@@ -5,12 +5,27 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
 {% for post in site.publications reversed %}
-  {% include archive-single.html %}
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <!-- Smaller, non-clickable title with reverse numbering (5 to 1) -->
+      <h3 class="archive__item-title" itemprop="headline">
+        {{ forloop.rindex }}. {{ post.title }}
+      </h3>
+      
+      <!-- Venue and Year -->
+      <p style="margin-top: 0;">
+        Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
+      </p>
+      
+      <!-- Prints the arXiv link and BibTeX block from your Markdown files -->
+      <div class="archive__item-excerpt" itemprop="description">
+        {{ post.content }}
+      </div>
+      
+    </article>
+  </div>
 {% endfor %}
