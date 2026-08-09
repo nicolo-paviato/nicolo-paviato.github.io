@@ -15,6 +15,6 @@ My research focuses on the statistical properties of deterministic systems, with
 
 ### Contact
 * **Email:** nicolo [dot] paviato [at] weizmann [dot] ac [dot] il
-* **Office:** Office 101, Ziskind Building, Weizmann Institute of Science, Rehovot, Israel
+* **Office:** Office 101, Ziskind Building
 
 
