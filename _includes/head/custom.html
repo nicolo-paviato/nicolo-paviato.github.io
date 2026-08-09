@@ -19,27 +19,62 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
-<!-- Sidebar Avatar Sizing -->
+<!-- Custom Styling -->
 <style>
   /* Hide duplicate name under sidebar picture */
   .author__name {
     display: none !important;
   }
 
-  /* Circular profile picture (face + camel framing) */
+  /* Responsive circular profile picture (face + camel framing) */
   .author__avatar img {
-    width: 220px !important;
-    height: 220px !important;
-    max-width: none !important;
+    width: 100% !important;
+    max-width: 220px !important;
+    aspect-ratio: 1 / 1 !important;
+    height: auto !important;
     object-fit: cover !important;
     object-position: 70% center !important;
     border-radius: 50% !important;
   }
-</style>
-<!-- end custom head snippets -->
 
+  /* Prevent horizontal side-scrolling across screens */
+  body, #main {
+    overflow-x: hidden;
+  }
+
+  /* Responsive Footer ("Site last updated") */
+  .page__footer {
+    width: 100% !important;
+    padding: 1.5em 1em !important;
+    text-align: center !important;
+    box-sizing: border-box !important;
+  }
+
+  .page__footer-copyright {
+    font-size: 0.85em !important;
+    line-height: 1.5 !important;
+    word-wrap: break-word !important;
+    max-width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  /* Mobile optimizations for small screens */
+  @media (max-width: 768px) {
+    .author__avatar img {
+      max-width: 160px !important;
+    }
+
+    .page__footer-copyright {
+      font-size: 0.75em !important;
+    }
+  }
+</style>
+
+<!-- Custom Browser Tab Title on Homepage -->
 {% if page.url == "/" %}
 <script>
   document.title = "Nicolò Paviato";
 </script>
 {% endif %}
+
+<!-- end custom head snippets -->
