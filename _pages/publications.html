@@ -11,21 +11,18 @@ author_profile: true
   <div class="list__item">
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
-      <!-- Smaller, non-clickable title with reverse numbering (5 to 1) -->
+      <!-- Title with reverse numbering -->
       <h3 class="archive__item-title" itemprop="headline">
         {{ forloop.rindex }}. {{ post.title }}
       </h3>
       
-      <!-- Venue and Year -->
-      <p style="margin-top: 0;">
+      <!-- Venue, Year, arXiv, and Journal ALL on one line -->
+      <p style="margin-top: 0; margin-bottom: 1.5em;">
         Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
+        {% if post.arxivurl %} &middot; <a href="{{ post.arxivurl }}">arXiv</a>{% endif %}
+        {% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Journal</a>{% endif %}
       </p>
-      
-      <!-- Prints the arXiv link and BibTeX block from your Markdown files -->
-      <div class="archive__item-excerpt" itemprop="description">
-        {{ post.content }}
-      </div>
-      
+
     </article>
   </div>
 {% endfor %}
