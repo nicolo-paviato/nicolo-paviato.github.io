@@ -23,7 +23,7 @@ repository               : "nicolo-paviato/nicolo-paviato.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "/images/profile.jpg"
+  avatar           : "https://nicolo-paviato.github.io/images/profile.jpg"
   name             : "Nicolò Paviato"
   #pronouns         : # example: "she/her"  
   bio              : "Postdoctoral Researcher in Mathematics"
