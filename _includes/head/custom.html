@@ -19,53 +19,69 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
-<!-- Custom Styling -->
+<!-- Custom Responsive & Windows Scaling Tweaks -->
 <style>
-  /* Hide duplicate name under sidebar picture */
+  /* 1. Normalize Base Font Size across Windows & DPI Scaling */
+  html {
+    font-size: 15px !important;
+  }
+
+  /* 2. Hide Duplicate Name Under Avatar */
   .author__name {
     display: none !important;
   }
 
-  /* Responsive circular profile picture (face + camel framing) */
-  .author__avatar img {
+  /* 3. Fix Avatar Container & Prevent Right-Side Clipping on Desktop */
+  .author__avatar {
     width: 100% !important;
-    max-width: 220px !important;
+    text-align: center !important;
+    display: block !important;
+    margin: 0 auto 1em !important;
+  }
+
+  .author__avatar img {
+    display: block !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 180px !important; /* Desktop sidebar sizing */
     aspect-ratio: 1 / 1 !important;
     height: auto !important;
     object-fit: cover !important;
     object-position: 70% center !important;
     border-radius: 50% !important;
+    box-shadow: none !important;
   }
 
-  /* Prevent horizontal side-scrolling across screens */
-  body, #main {
-    overflow-x: hidden;
-  }
-
-  /* Responsive Footer ("Site last updated") */
+  /* 4. Compact Footer Strip ("Site last updated") */
   .page__footer {
     width: 100% !important;
-    padding: 1.5em 1em !important;
+    padding: 0.6em 0 !important;
+    margin-top: 2em !important;
     text-align: center !important;
     box-sizing: border-box !important;
   }
 
+  .page__footer footer {
+    padding: 0.4em 1em !important;
+  }
+
   .page__footer-copyright {
-    font-size: 0.85em !important;
-    line-height: 1.5 !important;
+    font-size: 0.75em !important;
+    line-height: 1.2 !important;
     word-wrap: break-word !important;
     max-width: 90% !important;
     margin: 0 auto !important;
   }
 
-  /* Mobile optimizations for small screens */
+  /* 5. Prevent Horizontal Side-Scrolling */
+  body, #main {
+    overflow-x: hidden;
+  }
+
+  /* Mobile Adjustments: Increased avatar size for stacked mobile layouts */
   @media (max-width: 768px) {
     .author__avatar img {
-      max-width: 200px !important; /* Larger display size on mobile */
-    }
-
-    .page__footer-copyright {
-      font-size: 0.75em !important;
+      max-width: 240px !important; /* Prominent, easy-to-see size on phones */
     }
   }
 </style>
