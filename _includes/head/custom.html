@@ -19,69 +19,82 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
-<!-- Custom Responsive & Windows Scaling Tweaks -->
+<!-- Custom Styling -->
 <style>
-  /* 1. Normalize Base Font Size across Windows & DPI Scaling */
-  html {
-    font-size: 15px !important;
-  }
-
-  /* 2. Hide Duplicate Name Under Avatar */
+  /* Hide duplicate name under sidebar picture */
   .author__name {
     display: none !important;
   }
 
-  /* 3. Fix Avatar Container & Prevent Right-Side Clipping on Desktop */
-  .author__avatar {
-    width: 100% !important;
-    text-align: center !important;
-    display: block !important;
-    margin: 0 auto 1em !important;
-  }
-
+  /* Responsive circular profile picture (face + camel framing) */
   .author__avatar img {
-    display: block !important;
-    margin: 0 auto !important;
     width: 100% !important;
-    max-width: 180px !important; /* Desktop sidebar sizing */
+    max-width: 220px !important;
     aspect-ratio: 1 / 1 !important;
     height: auto !important;
     object-fit: cover !important;
     object-position: 70% center !important;
     border-radius: 50% !important;
-    box-shadow: none !important;
   }
 
-  /* 4. Compact Footer Strip ("Site last updated") */
+  /* Prevent horizontal side-scrolling across screens */
+  body, #main {
+    overflow-x: hidden;
+  }
+
+  /* Compact & Proportional Footer Strip */
   .page__footer {
     width: 100% !important;
-    padding: 0.6em 0 !important;
-    margin-top: 2em !important;
+    padding: clamp(0.4em, 1.2vh, 0.8em) 1em !important; /* Dynamically scales padding with viewport height */
+    margin-top: clamp(1em, 2.5vh, 2em) !important;
     text-align: center !important;
     box-sizing: border-box !important;
   }
 
   .page__footer footer {
-    padding: 0.4em 1em !important;
+    padding: 0 !important;
   }
 
   .page__footer-copyright {
-    font-size: 0.75em !important;
-    line-height: 1.2 !important;
+    font-size: clamp(0.68rem, 0.85vw, 0.78rem) !important; /* Proportional text size based on screen width */
+    line-height: 1.3 !important;
     word-wrap: break-word !important;
     max-width: 90% !important;
     margin: 0 auto !important;
   }
 
-  /* 5. Prevent Horizontal Side-Scrolling */
-  body, #main {
-    overflow-x: hidden;
+  /* Scale down publication archive headers and paper titles */
+  .archive__item-title {
+    font-size: 1.1rem !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.2em !important;
   }
 
-  /* Mobile Adjustments: Increased avatar size for stacked mobile layouts */
+  .archive__item-excerpt, 
+  .archive__item {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+  }
+
+  .archive h2, 
+  .taxonomy__section h2 {
+    font-size: 1.3rem !important;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0.3em;
+  }
+
+  /* Mobile optimizations for small screens */
   @media (max-width: 768px) {
     .author__avatar img {
-      max-width: 240px !important; /* Prominent, easy-to-see size on phones */
+      max-width: 200px !important;
+    }
+
+    .page__footer {
+      padding: 0.4em 0.6em !important;
+    }
+
+    .page__footer-copyright {
+      font-size: 0.7rem !important;
     }
   }
 </style>
