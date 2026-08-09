@@ -9,15 +9,3 @@ citation: "I. Melbourne, N. Paviato, and D. Terhesiu. (2022). &quot;Decay in nor
 ---
 
 [**[arXiv Version]**](https://arxiv.org/abs/2102.00026) &nbsp;|&nbsp; [**[Journal Version (DOI)]**](https://doi.org/10.4064/sm210410-7-3)
-
-```bibtex
-@article{MelPavTer22Stu,
-  author   = {Melbourne, Ian and Paviato, Nicol{\`o} and Terhesiu, Dalia},
-  title    = {Decay in norm of transfer operators for semiflows},
-  journal  = {Studia Math.},
-  volume   = {266},
-  number   = {2},
-  year     = {2022},
-  pages    = {149--166},
-  doi      = {10.4064/sm210410-7-3}
-}
