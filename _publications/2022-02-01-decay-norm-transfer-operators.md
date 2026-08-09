@@ -1,4 +1,3 @@
-
 ---
 title: "Decay in norm of transfer operators for semiflows"
 collection: publications
