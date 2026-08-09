@@ -21,7 +21,7 @@
 
 <!-- Custom Fully Responsive Styling -->
 <style>
-  /* 1. Global Fluid Typography (Scales all text across the site proportionally) */
+  /* 1. Global Fluid Typography */
   html {
     font-size: clamp(14px, 1.15vw, 17px) !important;
   }
@@ -34,7 +34,7 @@
   /* 3. Proportional Avatar Sizing */
   .author__avatar img {
     width: 100% !important;
-    max-width: clamp(160px, 14vw, 220px) !important; /* Scales fluidly with screen width */
+    max-width: clamp(160px, 14vw, 220px) !important;
     aspect-ratio: 1 / 1 !important;
     height: auto !important;
     object-fit: cover !important;
@@ -47,11 +47,11 @@
     overflow-x: hidden;
   }
 
-  /* 5. Proportional Footer Strip */
+  /* 5. Ultra-Compact Proportional Footer Strip */
   .page__footer {
     width: 100% !important;
-    padding: clamp(0.4em, 1.2vh, 0.8em) 1em !important;
-    margin-top: clamp(1em, 2.5vh, 2em) !important;
+    padding: clamp(0.2em, 0.6vh, 0.4em) 1em !important; /* Tightened vertical padding */
+    margin-top: clamp(0.5em, 1.5vh, 1em) !important;   /* Reduced top margin gap */
     text-align: center !important;
     box-sizing: border-box !important;
   }
@@ -61,8 +61,8 @@
   }
 
   .page__footer-copyright {
-    font-size: clamp(0.68rem, 0.85vw, 0.78rem) !important;
-    line-height: 1.3 !important;
+    font-size: clamp(0.65rem, 0.75vw, 0.72rem) !important; /* Smaller proportional font */
+    line-height: 1.15 !important;                          /* Compact line spacing */
     word-wrap: break-word !important;
     max-width: 90% !important;
     margin: 0 auto !important;
@@ -91,11 +91,12 @@
   /* Mobile Adjustments */
   @media (max-width: 768px) {
     .author__avatar img {
-      max-width: clamp(180px, 50vw, 220px) !important; /* Prominent size on mobile screens */
+      max-width: clamp(180px, 50vw, 220px) !important;
     }
 
     .page__footer {
-      padding: 0.4em 0.6em !important;
+      padding: 0.2em 0.5em !important;
+      margin-top: 0.8em !important;
     }
   }
 </style>
