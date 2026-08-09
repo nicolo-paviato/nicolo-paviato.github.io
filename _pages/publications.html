@@ -15,9 +15,16 @@ author_profile: true
       <h3 class="archive__item-title" itemprop="headline">
         {{ forloop.rindex }}. {{ post.title }}
       </h3>
+
+      <!-- Authors -->
+      {% if post.authors %}
+        <p style="margin-top: 0; margin-bottom: 0.2em;">
+          {{ post.authors }}
+        </p>
+      {% endif %}
       
-      <!-- Venue, Year, arXiv, and Journal ALL on one line -->
-      <p style="margin-top: 0; margin-bottom: 1.5em;">
+      <!-- Venue, Year, arXiv, and Journal -->
+      <p style="margin-top: 0; margin-bottom: 1.5em; color: #555;">
         Published in <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
         {% if post.arxivurl %} &middot; <a href="{{ post.arxivurl }}">arXiv</a>{% endif %}
         {% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Journal</a>{% endif %}
