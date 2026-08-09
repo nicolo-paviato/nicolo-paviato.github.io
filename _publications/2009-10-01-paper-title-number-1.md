@@ -1,14 +1,24 @@
 ---
-title: "Paper Title Number 1"
+title: "Nonexistence of spectral gaps in Hölder spaces for continuous time dynamical systems"
 collection: publications
-category: manuscripts
-permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'https://academicpages.github.io/files/slides1.pdf'
-paperurl: 'https://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'https://academicpages.github.io/files/bibtex1.bib'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+permalink: /publication/2022-nonexistence-spectral-gaps
+date: 2022-01-01
+venue: "Israel Journal of Mathematics"
+paperurl: "https://doi.org/10.1007/s11856-021-2273-3"
+arxivurl: "https://arxiv.org/abs/XXXX.XXXXX"
+citation: "I. Melbourne, N. Paviato, and D. Terhesiu. (2022). &quot;Nonexistence of spectral gaps in Hölder spaces for continuous time dynamical systems.&quot; <i>Israel J. Math.</i> 247(2), 987–991."
 ---
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+
+[**[arXiv Version]**](https://arxiv.org/abs/XXXX.XXXXX) &nbsp;|&nbsp; [**[Journal Version (DOI)]**](https://doi.org/10.1007/s11856-021-2273-3)
+
+```bibtex
+@article{MelPavTer22Isr,
+  author   = {Melbourne, Ian and Paviato, Nicol{\`o} and Terhesiu, Dalia},
+  title    = {Nonexistence of spectral gaps in H{\"o}lder spaces for continuous time dynamical systems},
+  journal  = {Israel J. Math.},
+  volume   = {247},
+  number   = {2},
+  year     = {2022},
+  pages    = {987--991},
+  doi      = {10.1007/s11856-021-2273-3}
+}
