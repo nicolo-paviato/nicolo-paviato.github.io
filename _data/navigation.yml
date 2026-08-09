@@ -9,32 +9,11 @@
 
 main:
 
-  -title: "About"
-    url:/
-    
-  - title: "Publications and Preprints"
+  # main links
+main:
+  - title: "About"
+    url: /
+  - title: "Publications"
     url: /publications/
-
-  #- title: "Selected Talks"
-  #  url: /talks/    
-
   - title: "Personal"
     url: /personal/
-
-  #- title: "Teaching"
-  #  url: /teaching/    
-    
-  #- title: "Portfolio"
-  #  url: /portfolio/
-        
-  #- title: "Blog Posts"
-  #  url: /year-archive/
-    
-  #- title: "CV"
-  #  url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  #- title: "Guide"
-  #  url: /markdown/
