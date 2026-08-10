@@ -19,7 +19,7 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
-<!-- Custom Responsive Styling (No Mobile Media Queries) -->
+<!-- Custom Fully Responsive Styling -->
 <style>
   /* 1. Global Fluid Typography */
   html {
@@ -31,23 +31,41 @@
     display: none !important;
   }
 
-  /* 3. Proportional Avatar Sizing */
-  .author__avatar img {
+  /* 3. Override Theme's Mobile Layout (Force Vertical Stacking & Large Avatar Wrapper) */
+  .author__profile {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
     width: 100% !important;
-    max-width: clamp(160px, 14vw, 220px) !important;
+  }
+
+  .author__avatar {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+    margin: 0 auto 0.8em !important;
+  }
+
+  /* 4. Fixed Large Profile Picture Size Across Mobile & Desktop */
+  .author__avatar img {
+    display: block !important;
+    width: 180px !important;
+    height: 180px !important;
+    max-width: 180px !important;
     aspect-ratio: 1 / 1 !important;
-    height: auto !important;
     object-fit: cover !important;
     object-position: 70% center !important;
     border-radius: 50% !important;
+    margin: 0 auto !important;
   }
 
-  /* 4. Prevent Horizontal Side-Scrolling */
+  /* 5. Prevent Horizontal Side-Scrolling */
   body, #main {
     overflow-x: hidden;
   }
 
-  /* 5. Minimalist Micro Footer Strip */
+  /* 6. Minimalist Micro Footer Strip */
   .page__footer {
     width: 100% !important;
     padding: clamp(0.1em, 0.3vh, 0.2em) 0.5em !important;
@@ -69,7 +87,7 @@
     opacity: 0.8;
   }
 
-  /* 6. Proportional Publications Styling */
+  /* 7. Proportional Publications Styling */
   .archive__item-title {
     font-size: clamp(1rem, 1.2vw, 1.2rem) !important;
     margin-top: 0.5em !important;
