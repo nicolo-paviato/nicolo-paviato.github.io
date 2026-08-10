@@ -19,7 +19,7 @@
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
 
-<!-- Custom Fully Responsive Styling -->
+<!-- Custom Responsive Styling (No Mobile Media Queries) -->
 <style>
   /* 1. Global Fluid Typography */
   html {
@@ -31,7 +31,7 @@
     display: none !important;
   }
 
-  /* 3. Proportional Avatar Sizing (Desktop) */
+  /* 3. Proportional Avatar Sizing */
   .author__avatar img {
     width: 100% !important;
     max-width: clamp(160px, 14vw, 220px) !important;
@@ -87,18 +87,6 @@
     font-size: clamp(1.15rem, 1.4vw, 1.35rem) !important;
     border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.3em;
-  }
-
-  /* Mobile Adjustments (Enlarged Picture ONLY for Mobile Screens) */
-  @media (max-width: 768px) {
-    .author__avatar img {
-      max-width: 270px !important; /* Prominent, large display size on phones */
-    }
-
-    .page__footer {
-      padding: 0.1em 0.3em !important;
-      margin-top: 0.5em !important;
-    }
   }
 </style>
 
