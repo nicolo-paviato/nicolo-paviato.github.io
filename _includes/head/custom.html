@@ -31,7 +31,7 @@
     display: none !important;
   }
 
-  /* 3. Proportional Avatar Sizing */
+  /* 3. Proportional Avatar Sizing (Desktop) */
   .author__avatar img {
     width: 100% !important;
     max-width: clamp(160px, 14vw, 220px) !important;
@@ -50,8 +50,8 @@
   /* 5. Minimalist Micro Footer Strip */
   .page__footer {
     width: 100% !important;
-    padding: clamp(0.1em, 0.3vh, 0.2em) 0.5em !important; /* Minimal padding */
-    margin-top: clamp(0.3em, 1vh, 0.6em) !important;     /* Reduced top margin gap */
+    padding: clamp(0.1em, 0.3vh, 0.2em) 0.5em !important;
+    margin-top: clamp(0.3em, 1vh, 0.6em) !important;
     text-align: center !important;
     box-sizing: border-box !important;
   }
@@ -61,12 +61,12 @@
   }
 
   .page__footer-copyright {
-    font-size: clamp(0.55rem, 0.65vw, 0.65rem) !important; /* Smaller micro font */
+    font-size: clamp(0.55rem, 0.65vw, 0.65rem) !important;
     line-height: 1.1 !important;
     word-wrap: break-word !important;
     max-width: 90% !important;
     margin: 0 auto !important;
-    opacity: 0.8;                                          /* Subtle text tone */
+    opacity: 0.8;
   }
 
   /* 6. Proportional Publications Styling */
@@ -89,10 +89,10 @@
     padding-bottom: 0.3em;
   }
 
-  /* Mobile Adjustments */
+  /* Mobile Adjustments (Enlarged Picture ONLY for Mobile Screens) */
   @media (max-width: 768px) {
     .author__avatar img {
-      max-width: clamp(180px, 50vw, 220px) !important;
+      max-width: 270px !important; /* Prominent, large display size on phones */
     }
 
     .page__footer {
