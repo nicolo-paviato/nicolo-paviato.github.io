@@ -22,10 +22,10 @@ repository               : "nicolo-paviato/nicolo-paviato.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   name: "Nicolò Paviato"
-  avatar: "profile.png" # or your image filename
+  avatar: "profile.jpg" # or your image filename
   bio: "Postdoctoral Researcher in Mathematics"
   location: "Rehovot, Israel"
-  employer: "Weizmann Institute of Science"
+  employer: "[Weizmann Institute of Science](https://www.weizmann.ac.il/)"
   uri: "https://weizmann.elsevierpure.com/en/persons/nicolo-paviato/" # Links the "globe" website icon to your institutional page
 
 
