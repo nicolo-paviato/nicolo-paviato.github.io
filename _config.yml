@@ -21,15 +21,13 @@ repository               : "nicolo-paviato/nicolo-paviato.github.io"
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
-  # Biographic information
-  avatar           : "https://nicolo-paviato.github.io/images/profile.jpg"
-  name             : "Nicolò Paviato"
-  #pronouns         : # example: "she/her"  
-  bio              : "Postdoctoral Researcher in Mathematics"
-  #location         : "Earth"
-  employer         : "Weizmann Institute of Science"
-  #uri              : # URL
-  #email            : "nicolo.paviato@weizmann.ac.il" 
+  name: "Nicolò Paviato"
+  avatar: "profile.png" # or your image filename
+  bio: "Postdoctoral Researcher in Mathematics"
+  location: "Rehovot, Israel"
+  employer: "Weizmann Institute of Science"
+  uri: "https://weizmann.elsevierpure.com/en/persons/nicolo-paviato/" # Links the "globe" website icon to your institutional page
+
 
   # Academic websites
   academia         : # URL
