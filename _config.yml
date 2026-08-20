@@ -26,13 +26,11 @@ uri: "https://www.weizmann.ac.il/math/people/your-profile-slug" # Personal Profi
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   name: "Nicolò Paviato"
-  avatar: "profile.jpg" # or your image filename
+  avatar: "profile.jpg"
   bio: "Postdoctoral Researcher in Mathematics"
   location: "Rehovot, Israel"
-  employer: "Weizmann Institute of Science"
-  uri: "https://www.weizmann.ac.il/" # Weizmann webpage
-  employer: "Weizmann Institute of Science"
-  uri: "https://weizmann.elsevierpure.com/en/persons/nicolo-paviato/" # Links the "globe" website icon to your institutional page
+  employer: '<a href="https://www.weizmann.ac.il/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">Weizmann Institute of Science</a>'
+  uri: "https://weizmann.elsevierpure.com/en/persons/nicolo-paviato/"
 
 
   # Academic websites
