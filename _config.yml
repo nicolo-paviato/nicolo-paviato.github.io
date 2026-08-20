@@ -17,6 +17,10 @@ url                      : "https://nicolo-paviato.github.io" # The base hostnam
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "nicolo-paviato/nicolo-paviato.github.io"
 
+
+employer: "Weizmann Institute of Science"
+uri: "https://www.weizmann.ac.il/math/people/your-profile-slug" # Personal Profile
+
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -25,7 +29,9 @@ author:
   avatar: "profile.jpg" # or your image filename
   bio: "Postdoctoral Researcher in Mathematics"
   location: "Rehovot, Israel"
-  employer: "[Weizmann Institute of Science](https://www.weizmann.ac.il/)"
+  employer: "Weizmann Institute of Science"
+  uri: "https://www.weizmann.ac.il/" # Weizmann webpage
+  employer: "Weizmann Institute of Science"
   uri: "https://weizmann.elsevierpure.com/en/persons/nicolo-paviato/" # Links the "globe" website icon to your institutional page
 
 
