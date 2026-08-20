@@ -60,12 +60,35 @@
     margin: 0 auto !important;
   }
 
-  /* 5. Prevent Horizontal Side-Scrolling */
+  /* 5. Align Sidebar Icons & Text on the Same Line */
+  .author__urls.social-icons li,
+  .author__urls li {
+    display: flex !important;
+    align-items: baseline !important;
+    white-space: normal !important;
+    margin-bottom: 0.35em !important;
+    text-align: left !important;
+  }
+
+  .author__urls.social-icons li i,
+  .author__urls.social-icons li svg,
+  .author__urls.social-icons li .ai,
+  .author__urls li i {
+    flex-shrink: 0 !important;
+    margin-right: 8px !important;
+    display: inline-flex !important;
+  }
+
+  .author__urls li a {
+    display: inline !important;
+  }
+
+  /* 6. Prevent Horizontal Side-Scrolling */
   body, #main {
     overflow-x: hidden;
   }
 
-  /* 6. Minimalist Micro Footer Strip */
+  /* 7. Minimalist Micro Footer Strip */
   .page__footer {
     width: 100% !important;
     padding: clamp(0.1em, 0.3vh, 0.2em) 0.5em !important;
@@ -87,7 +110,7 @@
     opacity: 0.8;
   }
 
-  /* 7. Proportional Publications Styling */
+  /* 8. Proportional Publications Styling */
   .archive__item-title {
     font-size: clamp(1rem, 1.2vw, 1.2rem) !important;
     margin-top: 0.5em !important;
