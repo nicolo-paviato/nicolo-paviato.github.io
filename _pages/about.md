@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a postdoctoral researcher in mathematics at the [Weizmann Institute of Science](https://www.weizmann.ac.il/math/), working with [Prof. Omri Sarig](https://www.weizmann.ac.il/math/sarigo/home). Prior to this, I was a postdoctoral researcher at the Hebrew University of Jerusalem with [Prof. Mike Hochman](http://www.ma.huji.ac.il/~mhochman/). I received my PhD in 2023 from the University of Warwick, under the supervision of [Prof. Ian Melbourne](https://math-ianmelbourne.github.io). 
+I am a postdoctoral researcher in mathematics at the [Weizmann Institute of Science](https://www.weizmann.ac.il/math/), working with [Prof. Omri Sarig](https://www.weizmann.ac.il/math/sarigo/home). Prior to this, I was a postdoctoral researcher at the Hebrew University of Jerusalem with [Prof. Mike Hochman](http://www.ma.huji.ac.il/~mhochman/). I received my PhD in 2023 from the [University of Warwick](https://warwick.ac.uk/fac/sci/maths/), under the supervision of [Prof. Ian Melbourne](https://math-ianmelbourne.github.io). 
 
 <p style="text-align: center; margin: 1.5em 0;">
   <a href="https://nicolo-paviato.github.io/files/CV.pdf" class="btn btn--primary" target="_blank">📄 Download CV (PDF)</a>
