@@ -9,11 +9,21 @@ author_profile: true
   .page__title, .archive__subtitle {
     display: none !important;
   }
+  .page__inner-wrap {
+    padding-top: 0 !important;
+  }
+  .archive {
+    margin-top: 0 !important;
+  }
+  h2.first-heading {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
 </style>
 
 {% include base_path %}
 
-<h2>Preprints</h2>
+<h2 class="first-heading">Preprints</h2>
 
 {% assign preprints = site.publications | where: "category", "preprints" %}
 {% for post in preprints reversed %}
