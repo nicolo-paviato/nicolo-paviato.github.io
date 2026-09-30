@@ -13,7 +13,7 @@ main:
 main:
   - title: "About"
     url: /
-  - title: "Publications"
+  - title: "Publications and Preprints"
     url: /publications/
   - title: "Personal"
     url: /personal/
