@@ -1,17 +1,52 @@
 ---
 layout: archive
-title: "Publications"
+title: "Publications and Preprints"
 permalink: /publications/
 author_profile: true
 ---
 
 {% include base_path %}
 
-{% for post in site.publications reversed %}
+<h2>Preprints</h2>
+
+{% assign preprints = site.publications | where: "category", "preprints" %}
+{% for post in preprints reversed %}
   <div class="list__item">
     <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
       
-      <!-- Title with reverse numbering -->
+      <!-- Title (without a number, since it's a short preprint list) -->
+      <h3 class="archive__item-title" itemprop="headline">
+        {{ post.title }}
+      </h3>
+
+      <!-- Coauthors -->
+      {% if post.coauthors %}
+        <p style="margin-top: 0; margin-bottom: 0.2em;">
+          Joint work with {{ post.coauthors }}
+        </p>
+      {% endif %}
+      
+      <!-- Venue, Year, arXiv, and Journal -->
+      <p style="margin-top: 0; margin-bottom: 1.5em; color: #555;">
+        <i>{{ post.venue }}</i>, {{ post.date | date: "%Y" }}
+        {% if post.arxivurl %} &middot; <a href="{{ post.arxivurl }}">arXiv</a>{% endif %}
+        {% if post.paperurl %} &middot; <a href="{{ post.paperurl }}">Journal</a>{% endif %}
+      </p>
+
+    </article>
+  </div>
+{% endfor %}
+
+<hr style="margin: 2em 0;">
+
+<h2>Published and Accepted Papers</h2>
+
+{% assign published = site.publications | where_exp: "item", "item.category != 'preprints'" %}
+{% for post in published reversed %}
+  <div class="list__item">
+    <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+      
+      <!-- Title with reverse numbering (5 down to 1) -->
       <h3 class="archive__item-title" itemprop="headline">
         {{ forloop.rindex }}. {{ post.title }}
       </h3>
